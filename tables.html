@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+</head>
+<style>
+    table{
+        width: 80%;
+        margin: auto;
+    }
+    td, th{
+        padding: 1em;
+    }
+    tfoot td {
+        text-align: center;
+    }
+
+
+</style>
+<body>
+    <table border="3">
+        <caption>study schedule</caption>
+        <thead>
+            <tr>
+                <th scope="col">DAYS</th>
+                <th scope="col">MORNING</th>
+                <th scope="col">EVENING</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">monday</th>
+                <td rowspan="2">html</td>
+                <td rowspan="2">css</td>
+            </tr>
+            <tr>
+                <th scope="row">tuesday</th>
+                <!-- <td>html</td> -->
+                <!-- <td>css</td> -->
+            </tr>
+            <tr>
+                <th scope="row">wednesday</th>
+                <td>css</td>
+                <td>html</td>
+            </tr>
+            <tr>
+                <th scope="row">thursday</th>
+                <td>html</td>
+                <td>css</td>
+            </tr>
+            <tr>
+                <th scope="row">friday</th>
+                <td colspan="2">html</td>
+                 <!-- <td>html</td> -->
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">change every 2weeks</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <caption>food menu</caption>
+        table>(thead>th>tr*4)+(tbody>(tr>th+td*3)*5)+(tfoot>tr>td)
+
+
+
+
+
+    </table>
+
+
+
+
+
+    
+</body>
+</html>
